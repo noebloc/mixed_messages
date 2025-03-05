@@ -4,6 +4,6 @@ const noun = ["book", "mountain", "ocean", "computer", "flower", "city", "dog", 
 const date = ["today", "tomorrow", "next week", "next month"];
 
 const mixedMessage = () => 
-    console.log('Hi');
+    console.log('You will ' + action[Math.floor(Math.random() * 10)] + ' ' + adjective[Math.floor(Math.random() * 10)] + ' '+ noun[Math.floor(Math.random() * 10)] + ' ' + date[Math.floor(Math.random() * 4)] + '!');
 
 mixedMessage();
