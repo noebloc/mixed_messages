@@ -8,10 +8,12 @@ let buttonClick = document.getElementById('buttonClicker');
 
 
 document.getElementById('buttonClicker').onclick = function() {
+
     let verb = action[Math.floor(Math.random() * 10)];
     let adj = adjective[Math.floor(Math.random() * 10)];
     let nou = noun[Math.floor(Math.random() * 10)];
-    let da = date[Math.floor(Math.random() * 4)]
+    let da = date[Math.floor(Math.random() * 4)];
+
     if(value === 0){
         document.getElementById("wacky").innerHTML = `You will ${verb} ${adj} ${nou} ${da}!`;
         document.getElementById("buttonClicker").innerHTML = 'Clear';
