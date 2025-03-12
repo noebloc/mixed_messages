@@ -4,7 +4,6 @@ const noun = ["book", "mountain", "ocean", "computer", "flower", "city", "dog", 
 const date = ["today", "tomorrow", "next week", "next month"];
 
 let value = 0;
-
 let buttonClick = document.getElementById('buttonClicker');
 
 
