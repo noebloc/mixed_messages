@@ -3,7 +3,33 @@ const adjective = ["happy", "bright", "creative", "calm", "energetic", "peaceful
 const noun = ["book", "mountain", "ocean", "computer", "flower", "city", "dog", "phone", "tree", "car"];
 const date = ["today", "tomorrow", "next week", "next month"];
 
-const mixedMessage = () => 
-    console.log('You will ' + action[Math.floor(Math.random() * 10)] + ' ' + adjective[Math.floor(Math.random() * 10)] + ' '+ noun[Math.floor(Math.random() * 10)] + ' ' + date[Math.floor(Math.random() * 4)] + '!');
+let verb = action[Math.floor(Math.random() * 10)];
+let adj = adjective[Math.floor(Math.random() * 10)];
+let nou = noun[Math.floor(Math.random() * 10)];
+let da = date[Math.floor(Math.random() * 4)]
 
-mixedMessage();
+let value = 0;
+
+let buttonClick = document.getElementById('buttonClicker');
+
+function mixMini(){
+    document.getElementById("wacky").innerHTML = `You will ${verb} ${adj} ${nou} ${da}!`;
+}
+
+function mixedMessage() {
+    if(value === 0){
+        mixMini();
+        value += 1;
+        
+    } else if (value === 1){
+        value -= 1;
+        document.getElementById("wacky").innerHTML = ' ';
+        
+    }
+    
+}
+
+
+
+buttonClick.addEventListener('click', mixedMessage);
+
