@@ -24,7 +24,6 @@ document.getElementById('buttonClicker').onclick = function() {
         document.getElementById("wacky").innerHTML = ' ';
         document.getElementById("buttonClicker").innerHTML = 'Click Me';
     }
-    
 }
 
 
